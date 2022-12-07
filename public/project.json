@@ -1,0 +1,146 @@
+{
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"alpha" : 
+			{
+				"condition" : "cameraposition.value == true",
+				"fraction" : false,
+				"index" : 3,
+				"max" : 10,
+				"min" : 0,
+				"order" : 103,
+				"text" : "Alpha",
+				"type" : "slider",
+				"value" : 0
+			},
+			"beta" : 
+			{
+				"condition" : "cameraposition.value == true",
+				"fraction" : false,
+				"index" : 4,
+				"max" : 10,
+				"min" : 0,
+				"order" : 104,
+				"text" : "Beta",
+				"type" : "slider",
+				"value" : 4
+			},
+			"cameraposition" : 
+			{
+				"index" : 1,
+				"order" : 101,
+				"text" : "Show Camera Menu",
+				"type" : "bool",
+				"value" : true
+			},
+			"planetdirection" : 
+			{
+				"condition" : "showplanets.value == true && showplanetmenu.value == true",
+				"index" : 11,
+				"order" : 111,
+				"text" : "Planet Direction",
+				"type" : "bool",
+				"value" : true
+			},
+			"planetspeed" : 
+			{
+				"condition" : "showplanets.value == true && showplanetmenu.value == true",
+				"fraction" : false,
+				"index" : 9,
+				"max" : 100,
+				"min" : 0,
+				"order" : 109,
+				"text" : "Planet Speed",
+				"type" : "slider",
+				"value" : 50
+			},
+			"planetspin" : 
+			{
+				"condition" : "showplanets.value == true && showplanetmenu.value == true",
+				"fraction" : false,
+				"index" : 10,
+				"max" : 100,
+				"min" : 0,
+				"order" : 110,
+				"text" : "Planet Spin",
+				"type" : "slider",
+				"value" : 50
+			},
+			"planetsseed" : 
+			{
+				"condition" : "showplanets.value == true && showplanetmenu.value == true",
+				"fraction" : false,
+				"index" : 8,
+				"max" : 9999999999,
+				"min" : 0,
+				"order" : 108,
+				"text" : "Planets Seed",
+				"type" : "slider",
+				"value" : 1
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"showplanetmenu" : 
+			{
+				"index" : 5,
+				"order" : 105,
+				"text" : "Show Planet Menu",
+				"type" : "bool",
+				"value" : true
+			},
+			"showplanets" : 
+			{
+				"condition" : "showplanetmenu.value == true",
+				"index" : 6,
+				"order" : 106,
+				"text" : "Show Planets",
+				"type" : "bool",
+				"value" : true
+			},
+			"showplanettrail" : 
+			{
+				"condition" : "showplanets.value == true && showplanetmenu.value == true",
+				"index" : 7,
+				"order" : 107,
+				"text" : "Show Planet Trail",
+				"type" : "bool",
+				"value" : true
+			},
+			"supportfpssettings" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "Support FPS Settings",
+				"type" : "bool",
+				"value" : false
+			},
+			"zoom" : 
+			{
+				"condition" : "cameraposition.value == true",
+				"fraction" : false,
+				"index" : 2,
+				"max" : 100,
+				"min" : 0,
+				"order" : 102,
+				"text" : "Zoom",
+				"type" : "slider",
+				"value" : 0
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"snapshotformat" : 0,
+	"snapshotoverlay" : "",
+	"tags" : [ "Unspecified" ],
+	"title" : "Babylon JS Sun System",
+	"type" : "web",
+	"version" : 0
+}
