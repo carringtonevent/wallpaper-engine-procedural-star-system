@@ -10,9 +10,9 @@ const possibleEvents = {
   skyboxrotationy: (_: number) => {},
   // int (0-100)
   skyboxrotationz: (_: number) => {},
-  // int (0-10)
+  // int (0-100)
   alpha: (_: number) => {},
-  // int (0-10)
+  // int (0-100)
   beta: (_: number) => {},
   // int (0-100)
   zoom: (_: number) => {},

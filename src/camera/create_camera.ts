@@ -82,7 +82,7 @@ export const createCamera = (scene: BABYLON.Scene): void => {
   // Wallpaper Engine alpha option
   let isFirstAlphaEvent = true
   wallpaperEngineEventsAbstractionLayer.addListener('alpha', alpha => {
-    const alphaRadiants = BABYLON.Scalar.TwoPi * alpha * 0.1
+    const alphaRadiants = BABYLON.Scalar.TwoPi * alpha * 0.01
 
     if (isFirstAlphaEvent) {
       // Initial alpha configuration
@@ -119,7 +119,7 @@ export const createCamera = (scene: BABYLON.Scene): void => {
   // Wallpaper Engine beta option
   let isFirstBetaEvent = true
   wallpaperEngineEventsAbstractionLayer.addListener('beta', beta => {
-    const betaRadiants = Math.PI * beta * 0.1
+    const betaRadiants = Math.PI * beta * 0.01
 
     if (isFirstBetaEvent) {
       // Initial beta configuration
