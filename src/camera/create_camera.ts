@@ -14,7 +14,7 @@ export const createCamera = (scene: BABYLON.Scene): void => {
   )
 
   const zoomAnimation = new BABYLON.Animation(
-    `${camera.name}-radius-animation`,
+    `${camera.name}_radius_animation`,
     'radius',
     60,
     BABYLON.Animation.ANIMATIONTYPE_FLOAT,
@@ -23,7 +23,7 @@ export const createCamera = (scene: BABYLON.Scene): void => {
   )
 
   const alphaAnimation = new BABYLON.Animation(
-    `${camera.name}-alpha-animation`,
+    `${camera.name}_alpha_animation`,
     'alpha',
     60,
     BABYLON.Animation.ANIMATIONTYPE_FLOAT,
@@ -32,7 +32,7 @@ export const createCamera = (scene: BABYLON.Scene): void => {
   )
 
   const betaAnimation = new BABYLON.Animation(
-    `${camera.name}-beta-animation`,
+    `${camera.name}_beta_animation`,
     'beta',
     60,
     BABYLON.Animation.ANIMATIONTYPE_FLOAT,

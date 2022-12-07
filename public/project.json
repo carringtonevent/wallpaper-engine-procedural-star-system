@@ -8,10 +8,10 @@
 			{
 				"condition" : "cameraposition.value == true",
 				"fraction" : false,
-				"index" : 4,
+				"index" : 8,
 				"max" : 10,
 				"min" : 0,
-				"order" : 104,
+				"order" : 108,
 				"text" : "Alpha",
 				"type" : "slider",
 				"value" : 0
@@ -20,18 +20,18 @@
 			{
 				"condition" : "cameraposition.value == true",
 				"fraction" : false,
-				"index" : 5,
+				"index" : 9,
 				"max" : 10,
 				"min" : 0,
-				"order" : 105,
+				"order" : 109,
 				"text" : "Beta",
 				"type" : "slider",
 				"value" : 4
 			},
 			"cameraposition" : 
 			{
-				"index" : 2,
-				"order" : 102,
+				"index" : 6,
+				"order" : 106,
 				"text" : "Show Camera Menu",
 				"type" : "bool",
 				"value" : true
@@ -39,8 +39,8 @@
 			"planetdirection" : 
 			{
 				"condition" : "showplanets.value == true && showplanetmenu.value == true",
-				"index" : 12,
-				"order" : 112,
+				"index" : 16,
+				"order" : 116,
 				"text" : "Planet Direction",
 				"type" : "bool",
 				"value" : true
@@ -49,10 +49,10 @@
 			{
 				"condition" : "showplanets.value == true && showplanetmenu.value == true",
 				"fraction" : false,
-				"index" : 10,
+				"index" : 14,
 				"max" : 100,
 				"min" : 0,
-				"order" : 110,
+				"order" : 114,
 				"text" : "Planet Speed",
 				"type" : "slider",
 				"value" : 50
@@ -61,10 +61,10 @@
 			{
 				"condition" : "showplanets.value == true && showplanetmenu.value == true",
 				"fraction" : false,
-				"index" : 11,
+				"index" : 15,
 				"max" : 100,
 				"min" : 0,
-				"order" : 111,
+				"order" : 115,
 				"text" : "Planet Spin",
 				"type" : "slider",
 				"value" : 50
@@ -73,10 +73,10 @@
 			{
 				"condition" : "showplanets.value == true && showplanetmenu.value == true",
 				"fraction" : false,
-				"index" : 9,
+				"index" : 13,
 				"max" : 9999999999,
 				"min" : 0,
-				"order" : 109,
+				"order" : 113,
 				"text" : "Planets Seed",
 				"type" : "slider",
 				"value" : 1
@@ -90,8 +90,8 @@
 			},
 			"showplanetmenu" : 
 			{
-				"index" : 6,
-				"order" : 106,
+				"index" : 10,
+				"order" : 110,
 				"text" : "Show Planet Menu",
 				"type" : "bool",
 				"value" : true
@@ -99,8 +99,8 @@
 			"showplanets" : 
 			{
 				"condition" : "showplanetmenu.value == true",
-				"index" : 7,
-				"order" : 107,
+				"index" : 11,
+				"order" : 111,
 				"text" : "Show Planets",
 				"type" : "bool",
 				"value" : true
@@ -108,15 +108,24 @@
 			"showplanettrail" : 
 			{
 				"condition" : "showplanets.value == true && showplanetmenu.value == true",
-				"index" : 8,
-				"order" : 108,
+				"index" : 12,
+				"order" : 112,
 				"text" : "Show Planet Trail",
+				"type" : "bool",
+				"value" : true
+			},
+			"showskyboxmenu" : 
+			{
+				"index" : 1,
+				"order" : 101,
+				"text" : "Show Skybox Menu",
 				"type" : "bool",
 				"value" : true
 			},
 			"skybox" : 
 			{
-				"index" : 1,
+				"condition" : "showskyboxmenu.value == true",
+				"index" : 2,
 				"options" : 
 				[
 					{
@@ -128,10 +137,46 @@
 						"value" : "darkgreen"
 					}
 				],
-				"order" : 101,
+				"order" : 102,
 				"text" : "Skybox",
 				"type" : "combo",
 				"value" : "blue"
+			},
+			"skyboxrotationx" : 
+			{
+				"condition" : "showskyboxmenu.value == true",
+				"fraction" : false,
+				"index" : 3,
+				"max" : 100,
+				"min" : 0,
+				"order" : 103,
+				"text" : "Skybox Rotation X",
+				"type" : "slider",
+				"value" : 0
+			},
+			"skyboxrotationy" : 
+			{
+				"condition" : "showskyboxmenu.value == true",
+				"fraction" : false,
+				"index" : 4,
+				"max" : 100,
+				"min" : 0,
+				"order" : 104,
+				"text" : "Skybox Rotation Y",
+				"type" : "slider",
+				"value" : 0
+			},
+			"skyboxrotationz" : 
+			{
+				"condition" : "showskyboxmenu.value == true",
+				"fraction" : false,
+				"index" : 5,
+				"max" : 100,
+				"min" : 0,
+				"order" : 105,
+				"text" : "Skybox Rotation Z",
+				"type" : "slider",
+				"value" : 0
 			},
 			"supportfpssettings" : 
 			{
@@ -145,10 +190,10 @@
 			{
 				"condition" : "cameraposition.value == true",
 				"fraction" : false,
-				"index" : 3,
+				"index" : 7,
 				"max" : 100,
 				"min" : 0,
-				"order" : 103,
+				"order" : 107,
 				"text" : "Zoom",
 				"type" : "slider",
 				"value" : 0

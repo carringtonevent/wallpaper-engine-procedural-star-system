@@ -4,6 +4,12 @@ const possibleEvents = {
   // boolean
   supportfpssettings: (_: boolean) => {},
   skybox: (_: 'blue' | 'darkgreen') => {},
+  // int (0-100)
+  skyboxrotationx: (_: number) => {},
+  // int (0-100)
+  skyboxrotationy: (_: number) => {},
+  // int (0-100)
+  skyboxrotationz: (_: number) => {},
   // int (0-10)
   alpha: (_: number) => {},
   // int (0-10)

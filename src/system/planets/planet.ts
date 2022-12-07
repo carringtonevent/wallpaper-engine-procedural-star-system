@@ -145,14 +145,14 @@ export class Planet extends BABYLON.TransformNode {
   private readonly _planetTrail: BABYLON.TrailMesh
 
   private readonly _planetVisibilityAnimation = new BABYLON.Animation(
-    `${this.name}-visibility-animation`,
+    `${this.name}_visibility_animation`,
     'visibility',
     60,
     BABYLON.Animation.ANIMATIONTYPE_FLOAT,
   )
 
   private readonly _planetTrailVisibilityAnimation = new BABYLON.Animation(
-    `${this.name}-visibility-animation`,
+    `${this.name}_visibility_animation`,
     'visibility',
     60,
     BABYLON.Animation.ANIMATIONTYPE_FLOAT,
