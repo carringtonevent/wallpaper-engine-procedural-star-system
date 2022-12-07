@@ -8,10 +8,10 @@
 			{
 				"condition" : "cameraposition.value == true",
 				"fraction" : false,
-				"index" : 3,
+				"index" : 4,
 				"max" : 10,
 				"min" : 0,
-				"order" : 103,
+				"order" : 104,
 				"text" : "Alpha",
 				"type" : "slider",
 				"value" : 0
@@ -20,18 +20,18 @@
 			{
 				"condition" : "cameraposition.value == true",
 				"fraction" : false,
-				"index" : 4,
+				"index" : 5,
 				"max" : 10,
 				"min" : 0,
-				"order" : 104,
+				"order" : 105,
 				"text" : "Beta",
 				"type" : "slider",
 				"value" : 4
 			},
 			"cameraposition" : 
 			{
-				"index" : 1,
-				"order" : 101,
+				"index" : 2,
+				"order" : 102,
 				"text" : "Show Camera Menu",
 				"type" : "bool",
 				"value" : true
@@ -39,8 +39,8 @@
 			"planetdirection" : 
 			{
 				"condition" : "showplanets.value == true && showplanetmenu.value == true",
-				"index" : 11,
-				"order" : 111,
+				"index" : 12,
+				"order" : 112,
 				"text" : "Planet Direction",
 				"type" : "bool",
 				"value" : true
@@ -49,10 +49,10 @@
 			{
 				"condition" : "showplanets.value == true && showplanetmenu.value == true",
 				"fraction" : false,
-				"index" : 9,
+				"index" : 10,
 				"max" : 100,
 				"min" : 0,
-				"order" : 109,
+				"order" : 110,
 				"text" : "Planet Speed",
 				"type" : "slider",
 				"value" : 50
@@ -61,10 +61,10 @@
 			{
 				"condition" : "showplanets.value == true && showplanetmenu.value == true",
 				"fraction" : false,
-				"index" : 10,
+				"index" : 11,
 				"max" : 100,
 				"min" : 0,
-				"order" : 110,
+				"order" : 111,
 				"text" : "Planet Spin",
 				"type" : "slider",
 				"value" : 50
@@ -73,10 +73,10 @@
 			{
 				"condition" : "showplanets.value == true && showplanetmenu.value == true",
 				"fraction" : false,
-				"index" : 8,
+				"index" : 9,
 				"max" : 9999999999,
 				"min" : 0,
-				"order" : 108,
+				"order" : 109,
 				"text" : "Planets Seed",
 				"type" : "slider",
 				"value" : 1
@@ -90,8 +90,8 @@
 			},
 			"showplanetmenu" : 
 			{
-				"index" : 5,
-				"order" : 105,
+				"index" : 6,
+				"order" : 106,
 				"text" : "Show Planet Menu",
 				"type" : "bool",
 				"value" : true
@@ -99,8 +99,8 @@
 			"showplanets" : 
 			{
 				"condition" : "showplanetmenu.value == true",
-				"index" : 6,
-				"order" : 106,
+				"index" : 7,
+				"order" : 107,
 				"text" : "Show Planets",
 				"type" : "bool",
 				"value" : true
@@ -108,11 +108,30 @@
 			"showplanettrail" : 
 			{
 				"condition" : "showplanets.value == true && showplanetmenu.value == true",
-				"index" : 7,
-				"order" : 107,
+				"index" : 8,
+				"order" : 108,
 				"text" : "Show Planet Trail",
 				"type" : "bool",
 				"value" : true
+			},
+			"skybox" : 
+			{
+				"index" : 1,
+				"options" : 
+				[
+					{
+						"label" : "Blue",
+						"value" : "blue"
+					},
+					{
+						"label" : "Dark Green",
+						"value" : "darkgreen"
+					}
+				],
+				"order" : 101,
+				"text" : "Skybox",
+				"type" : "combo",
+				"value" : "blue"
 			},
 			"supportfpssettings" : 
 			{
@@ -126,10 +145,10 @@
 			{
 				"condition" : "cameraposition.value == true",
 				"fraction" : false,
-				"index" : 2,
+				"index" : 3,
 				"max" : 100,
 				"min" : 0,
-				"order" : 102,
+				"order" : 103,
 				"text" : "Zoom",
 				"type" : "slider",
 				"value" : 0
@@ -140,7 +159,7 @@
 	"snapshotformat" : 0,
 	"snapshotoverlay" : "",
 	"tags" : [ "Unspecified" ],
-	"title" : "Babylon JS Sun System",
+	"title" : "Procedural Star System",
 	"type" : "web",
 	"version" : 0
 }

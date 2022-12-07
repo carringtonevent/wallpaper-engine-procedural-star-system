@@ -34,15 +34,47 @@ export const createPlanets = (scene: BABYLON.Scene, seed: number): void => {
     return planetPosRadius
   }
 
+  // Arrays because to not destroy the seeds on new planet features
+  const posRadiantsArray: number[] = []
+  const posRadiusArray: number[] = []
+  const scaleArray: number[] = []
+  const spinArray: number[] = []
+  const colorArray: BABYLON.Color3[] = []
+  const rockyArray: boolean[] = []
+
+  for (let i = 0; i < planetCount; i++) {
+    posRadiantsArray[i] = getRandomPosRadiants()
+  }
+
+  for (let i = 0; i < planetCount; i++) {
+    posRadiusArray[i] = getRandomPosRadius()
+  }
+
+  for (let i = 0; i < planetCount; i++) {
+    scaleArray[i] = getRandomScale()
+  }
+
+  for (let i = 0; i < planetCount; i++) {
+    spinArray[i] = getRandomSpin()
+  }
+
+  for (let i = 0; i < planetCount; i++) {
+    colorArray[i] = getRandomColor()
+  }
+
+  for (let i = 0; i < planetCount; i++) {
+    rockyArray[i] = getRandomBool()
+  }
+
   for (let i = 0; i < planetCount; i++) {
     planets.push(new Planet(scene, {
       name: `planet_${originalSeed}_${i}`,
-      posRadiants: getRandomPosRadiants(),
-      posRadius: getRandomPosRadius(),
-      scale: getRandomScale(),
-      spin: getRandomSpin(),
-      color: getRandomColor(),
-      rocky: getRandomBool(),
+      posRadiants: posRadiantsArray[i],
+      posRadius: posRadiusArray[i],
+      scale: scaleArray[i],
+      spin: spinArray[i],
+      color: colorArray[i],
+      rocky: rockyArray[i],
     }))
   }
 }

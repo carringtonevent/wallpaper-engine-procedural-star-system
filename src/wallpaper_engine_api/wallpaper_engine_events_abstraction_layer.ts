@@ -3,6 +3,7 @@ import { Listenable } from '../helpers/listenable'
 const possibleEvents = {
   // boolean
   supportfpssettings: (_: boolean) => {},
+  skybox: (_: 'blue' | 'darkgreen') => {},
   // int (0-10)
   alpha: (_: number) => {},
   // int (0-10)

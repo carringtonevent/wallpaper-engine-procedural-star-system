@@ -62,7 +62,7 @@ export class Planet extends BABYLON.TransformNode {
     this._planet = BABYLON.MeshBuilder.CreateSphere(`${_options.name}_planet`, { diameter: 1 }, scene)
     this._planet.visibility = initialPlanetVisibility
 
-    const mat = new BABYLON.StandardMaterial(`${this.name}-mat`, scene)
+    const mat = new BABYLON.StandardMaterial(`${this.name}_mat`, scene)
 
     mat.diffuseColor = mat.specularColor = _options.color
     mat.specularPower = 0
@@ -93,12 +93,12 @@ export class Planet extends BABYLON.TransformNode {
     // Planet Trail
     this._planet.computeWorldMatrix(true)
 
-    const trailMat = new BABYLON.StandardMaterial(`${this.name}-trail-mat`, scene)
+    const trailMat = new BABYLON.StandardMaterial(`${this.name}_trail_mat`, scene)
     trailMat.emissiveColor = trailMat.specularColor = trailMat.diffuseColor = _options.color
 
     trailMat.freeze()
 
-    this._planetTrail = new BABYLON.TrailMesh(`${this.name}-trail`, this._planetTransform, scene, 0.1, BABYLON.Scalar.TwoPi * _options.posRadius, true)
+    this._planetTrail = new BABYLON.TrailMesh(`${this.name}_trail`, this._planetTransform, scene, 0.1, BABYLON.Scalar.TwoPi * _options.posRadius, true)
     this._planetTrail.visibility = initialPlanetTrailVisibility
     this._planetTrail.material = trailMat
 

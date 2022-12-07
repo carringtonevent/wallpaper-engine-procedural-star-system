@@ -20,6 +20,7 @@ const scene = new BABYLON.Scene(engine, {
 })
 scene.autoClear = false
 scene.skipFrustumClipping = true
+
 // scene.autoClearDepthAndStencil = false
 
 glowLayerWrapper.value = new BABYLON.GlowLayer('glowLayer', scene)
@@ -40,6 +41,7 @@ wallpaperEngineEventsAbstractionLayer.addListener('supportfpssettings', newSuppo
 wallpaperEngineEventsAbstractionLayer.addListener('fps', newFps => fps = newFps)
 
 engine.runRenderLoop(() => {
+  // <comment this to test in browser>
   if (supportFpsSettings) {
     if (fps > 0) {
       fpsThreshold += engine.getDeltaTime() / 1000
@@ -51,11 +53,12 @@ engine.runRenderLoop(() => {
       return
     }
   }
+  // </comment this to test in browser>
 
   scene.render()
 })
 
-// Debug Scene
+// <uncomment this to debug>
 // const camera = scene.getCameraByName('camera') as BABYLON.ArcRotateCamera
 // camera.attachControl(canvas, true)
 // scene.debugLayer.show({
@@ -64,3 +67,4 @@ engine.runRenderLoop(() => {
 //   overlay: true,
 //   inspectorURL: './assets/js/inspector.js'
 // })
+// </uncomment this to debug>
