@@ -26,7 +26,7 @@
 				"order" : 109,
 				"text" : "Beta",
 				"type" : "slider",
-				"value" : 4
+				"value" : 40
 			},
 			"cameraposition" : 
 			{
@@ -34,11 +34,11 @@
 				"order" : 106,
 				"text" : "Show Camera Menu",
 				"type" : "bool",
-				"value" : true
+				"value" : false
 			},
 			"planetdirection" : 
 			{
-				"condition" : "showplanets.value == true && showplanetmenu.value == true",
+				"condition" : "showplanetmenu.value == true",
 				"index" : 22,
 				"order" : 122,
 				"text" : "Planet Direction",
@@ -47,7 +47,7 @@
 			},
 			"planetspeed" : 
 			{
-				"condition" : "showplanets.value == true && showplanetmenu.value == true",
+				"condition" : "showplanetmenu.value == true",
 				"fraction" : false,
 				"index" : 20,
 				"max" : 100,
@@ -59,7 +59,7 @@
 			},
 			"planetspin" : 
 			{
-				"condition" : "showplanets.value == true && showplanetmenu.value == true",
+				"condition" : "showplanetmenu.value == true",
 				"fraction" : false,
 				"index" : 21,
 				"max" : 100,
@@ -71,7 +71,7 @@
 			},
 			"planetsseed" : 
 			{
-				"condition" : "showplanets.value == true && showplanetmenu.value == true",
+				"condition" : "showplanetmenu.value == true",
 				"fraction" : false,
 				"index" : 19,
 				"max" : 9999999999,
@@ -79,7 +79,7 @@
 				"order" : 119,
 				"text" : "Planets Seed",
 				"type" : "slider",
-				"value" : 1
+				"value" : 9999999999
 			},
 			"schemecolor" : 
 			{
@@ -94,7 +94,7 @@
 				"order" : 116,
 				"text" : "Show Planet Menu",
 				"type" : "bool",
-				"value" : true
+				"value" : false
 			},
 			"showplanets" : 
 			{
@@ -107,7 +107,7 @@
 			},
 			"showplanettrail" : 
 			{
-				"condition" : "showplanets.value == true && showplanetmenu.value == true",
+				"condition" : "showplanetmenu.value == true",
 				"index" : 18,
 				"order" : 118,
 				"text" : "Show Planet Trail",
@@ -120,7 +120,7 @@
 				"order" : 101,
 				"text" : "Show Skybox Menu",
 				"type" : "bool",
-				"value" : true
+				"value" : false
 			},
 			"showstarmenu" : 
 			{
@@ -128,7 +128,7 @@
 				"order" : 110,
 				"text" : "Show Star Menu",
 				"type" : "bool",
-				"value" : true
+				"value" : false
 			},
 			"skybox" : 
 			{
@@ -172,7 +172,7 @@
 				"order" : 104,
 				"text" : "Skybox Rotation Y",
 				"type" : "slider",
-				"value" : 0
+				"value" : 91
 			},
 			"skyboxrotationz" : 
 			{
@@ -252,7 +252,7 @@
 				"order" : 107,
 				"text" : "Zoom",
 				"type" : "slider",
-				"value" : 0
+				"value" : 40
 			}
 		}
 	},
