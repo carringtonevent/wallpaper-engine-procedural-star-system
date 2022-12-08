@@ -39,8 +39,8 @@
 			"planetdirection" : 
 			{
 				"condition" : "showplanets.value == true && showplanetmenu.value == true",
-				"index" : 16,
-				"order" : 116,
+				"index" : 22,
+				"order" : 122,
 				"text" : "Planet Direction",
 				"type" : "bool",
 				"value" : true
@@ -49,10 +49,10 @@
 			{
 				"condition" : "showplanets.value == true && showplanetmenu.value == true",
 				"fraction" : false,
-				"index" : 14,
+				"index" : 20,
 				"max" : 100,
 				"min" : 0,
-				"order" : 114,
+				"order" : 120,
 				"text" : "Planet Speed",
 				"type" : "slider",
 				"value" : 50
@@ -61,10 +61,10 @@
 			{
 				"condition" : "showplanets.value == true && showplanetmenu.value == true",
 				"fraction" : false,
-				"index" : 15,
+				"index" : 21,
 				"max" : 100,
 				"min" : 0,
-				"order" : 115,
+				"order" : 121,
 				"text" : "Planet Spin",
 				"type" : "slider",
 				"value" : 50
@@ -73,10 +73,10 @@
 			{
 				"condition" : "showplanets.value == true && showplanetmenu.value == true",
 				"fraction" : false,
-				"index" : 13,
+				"index" : 19,
 				"max" : 9999999999,
 				"min" : 0,
-				"order" : 113,
+				"order" : 119,
 				"text" : "Planets Seed",
 				"type" : "slider",
 				"value" : 1
@@ -90,8 +90,8 @@
 			},
 			"showplanetmenu" : 
 			{
-				"index" : 10,
-				"order" : 110,
+				"index" : 16,
+				"order" : 116,
 				"text" : "Show Planet Menu",
 				"type" : "bool",
 				"value" : true
@@ -99,8 +99,8 @@
 			"showplanets" : 
 			{
 				"condition" : "showplanetmenu.value == true",
-				"index" : 11,
-				"order" : 111,
+				"index" : 17,
+				"order" : 117,
 				"text" : "Show Planets",
 				"type" : "bool",
 				"value" : true
@@ -108,8 +108,8 @@
 			"showplanettrail" : 
 			{
 				"condition" : "showplanets.value == true && showplanetmenu.value == true",
-				"index" : 12,
-				"order" : 112,
+				"index" : 18,
+				"order" : 118,
 				"text" : "Show Planet Trail",
 				"type" : "bool",
 				"value" : true
@@ -119,6 +119,14 @@
 				"index" : 1,
 				"order" : 101,
 				"text" : "Show Skybox Menu",
+				"type" : "bool",
+				"value" : true
+			},
+			"showstarmenu" : 
+			{
+				"index" : 10,
+				"order" : 110,
+				"text" : "Show Star Menu",
 				"type" : "bool",
 				"value" : true
 			},
@@ -177,6 +185,54 @@
 				"text" : "Skybox Rotation Z",
 				"type" : "slider",
 				"value" : 0
+			},
+			"starcoldsurfacecolor" : 
+			{
+				"condition" : "showstarmenu.value == true",
+				"index" : 11,
+				"order" : 111,
+				"text" : "Star Cold Surface Color",
+				"type" : "color",
+				"value" : "0.3764705882352941 0.09411764705882353 0.027450980392156862"
+			},
+			"starcoronacolor" : 
+			{
+				"condition" : "showstarmenu.value == true",
+				"index" : 14,
+				"order" : 114,
+				"text" : "Star Corona Color",
+				"type" : "color",
+				"value" : "0.6039215686274509 0.2901960784313726 0.058823529411764705"
+			},
+			"stareruptioncolor" : 
+			{
+				"condition" : "showstarmenu.value == true",
+				"index" : 15,
+				"order" : 115,
+				"text" : "Star Eruption Color",
+				"type" : "color",
+				"value" : "0.9058823529411765 0.7137254901960784 0.3843137254901961"
+			},
+			"starsurfacecolor" : 
+			{
+				"condition" : "showstarmenu.value == true",
+				"index" : 12,
+				"order" : 112,
+				"text" : "Star Surface Color",
+				"type" : "color",
+				"value" : "0.6274509803921569 0.3058823529411765 0.06274509803921569"
+			},
+			"starsurfacetransparency" : 
+			{
+				"condition" : "showstarmenu.value == true",
+				"fraction" : false,
+				"index" : 13,
+				"max" : 255,
+				"min" : 0,
+				"order" : 113,
+				"text" : "Star Surface Transparency",
+				"type" : "slider",
+				"value" : 128
 			},
 			"supportfpssettings" : 
 			{

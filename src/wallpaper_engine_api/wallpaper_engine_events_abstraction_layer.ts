@@ -16,6 +16,16 @@ const possibleEvents = {
   beta: (_: number) => {},
   // int (0-100)
   zoom: (_: number) => {},
+  // '0.62 0.62 0.62'
+  starcoldsurfacecolor: (_: String) => {},
+  // '0.62 0.62 0.62'
+  starsurfacecolor: (_: String) => {},
+  // int (0-255)
+  starsurfacetransparency: (_: number) => {},
+  // '0.62 0.62 0.62'
+  starcoronacolor: (_: String) => {},
+  // '0.62 0.62 0.62'
+  stareruptioncolor: (_: String) => {},
   // boolean
   showplanets: (_: boolean) => {},
   // int
