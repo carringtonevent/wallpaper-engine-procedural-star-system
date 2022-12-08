@@ -143,6 +143,14 @@
 					{
 						"label" : "Dark Green",
 						"value" : "darkgreen"
+					},
+					{
+						"label" : "Light Blue",
+						"value" : "lightblue"
+					},
+					{
+						"label" : "Red",
+						"value" : "red"
 					}
 				],
 				"order" : 102,

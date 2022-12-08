@@ -32,9 +32,15 @@ export const createSkybox = (scene: BABYLON.Scene): void => {
   const skyboxMaterial = new BABYLON.StandardMaterial('skybox', scene)
 
   const blueReflectionTexture = new BABYLON.CubeTexture('assets/imgs/skybox/blue/bkg1', scene)
-  const darkGreenReflectionTexture = new BABYLON.CubeTexture('assets/imgs/skybox/green/space', scene)
+  const darkGreenReflectionTexture = new BABYLON.CubeTexture('assets/imgs/skybox/darkgreen/space', scene)
+  const lightBlueReflectionTexture = new BABYLON.CubeTexture('assets/imgs/skybox/lightblue/lightblue', scene)
+  const redReflectionTexture = new BABYLON.CubeTexture('assets/imgs/skybox/red/bkg1', scene)
 
-  blueReflectionTexture.coordinatesMode = darkGreenReflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE
+  blueReflectionTexture.coordinatesMode
+    = darkGreenReflectionTexture.coordinatesMode
+    = lightBlueReflectionTexture.coordinatesMode
+    = redReflectionTexture.coordinatesMode
+    = BABYLON.Texture.SKYBOX_MODE
 
   skyboxMaterial.backFaceCulling = false
   skyboxMaterial.reflectionTexture = blueReflectionTexture
@@ -55,6 +61,12 @@ export const createSkybox = (scene: BABYLON.Scene): void => {
         break
       case 'darkgreen':
         skyboxMaterial.reflectionTexture = darkGreenReflectionTexture
+        break
+      case 'lightblue':
+        skyboxMaterial.reflectionTexture = lightBlueReflectionTexture
+        break
+      case 'red':
+        skyboxMaterial.reflectionTexture = redReflectionTexture
         break
     }
 
